@@ -1,0 +1,62 @@
+.character-slider {
+    width: 100%;
+    margin: 5em 0;
+    position: relative;
+    pointer-events: none;
+}
+
+.swiper-container {
+    width: 100%;
+    margin: 2em auto;
+}
+
+.swiper-slider {
+    text-align: center;
+}
+
+.swiper-img {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+}
+
+.swiper-above {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: green solid 4px;
+    background-color: white;
+    transition: border-color 1.5s;
+}
+
+.swiper-slider.above {
+    position: relative;
+    transform: scale(0);
+    transition: transform 0.8s;
+}
+
+.swiper-slide-active.above {
+    /* transform: scale(1); */
+}
+
+
+
+.swiper-img.above {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 32px;
+    color:rgb(43, 43, 43);
+}
