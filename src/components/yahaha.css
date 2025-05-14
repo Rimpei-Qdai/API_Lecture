@@ -1,0 +1,16 @@
+ul.imgs li.img {
+  width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+ul.imgs li.img .title {
+  text-align: start;
+  margin-bottom: 0.2em;
+}
+ul.imgs li.img img {
+  width: 100%;
+  transition: all 0.35s;
+}
+ul.imgs li.img img:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=yahaha.css.map */

@@ -1,0 +1,63 @@
+.btn.cubic {
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    perspective: 300px;
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+
+    & span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        border: 10px solid black;
+        line-height: 30px;
+        text-align: center;
+        transition: all 0.3s;
+        transform-origin: center center;
+        transition: all 0.3s;
+    }
+
+
+    & .default {
+        background-color: black;
+        color: white;
+        transform: rotateX(0deg);
+        transform-origin: center center -25px;
+    }
+
+    & .hovering {
+        background-color: black;
+        color: white;
+        transform: rotateX(-90deg);
+        transform-origin: center center -25px;
+    }
+
+    &:hover {
+        & .hovering {
+            transform: rotateX(0);
+        }
+
+        & .default   {
+            transform: rotateX(-90deg);
+        }
+    }
+}
+
+
+ul.images {
+    padding: none;
+    & li.image {
+        width: 80%;
+
+        & img {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
