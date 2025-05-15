@@ -16,6 +16,12 @@
         padding-right: 3%;
         padding-top: 20px;
         cursor: pointer;
+        &.open {
+            & .bar {
+                background-color: red;
+            }    
+        }
+
         & .bar {
             display: block;
             height: 6px;
@@ -44,7 +50,19 @@
         height: fit-content;
 
         &.open {
-
+            & span {
+                &:nth-child(1) {
+                    transform: translateY(16px) rotate(2115deg);
+                }
+                &:nth-child(2) {
+                    transform: scaleX(0);
+                    transform-origin: center left;
+                }
+                &:nth-child(3) {
+                    transform: translateY(-16px) rotate(-2115deg);
+                    
+                }
+            }
         }
         
 
@@ -54,8 +72,7 @@
             background-color: black;
             display: block;
             margin-top: 9px;
-
-
+            transition: all 1s;
         }
      }
 }
