@@ -7,9 +7,40 @@
   top: 0;
   left: 0;
   z-index: 100;
-  box-shadow: 10px 0px 5px rgb(0, 0, 0);
+  box-shadow: 10px 0px 5px #4e1f1f;
   justify-content: space-between;
   display: flex;
+}
+.header.open {
+  box-shadow: none;
+}
+.header .menu-list {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(207, 236, 251, 0.629);
+  top: 100%;
+  right: 0%;
+  z-index: 100;
+  transition: all 0.3s;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  height: 100px;
+  list-style: none;
+}
+.header .menu-list.open {
+  transform: none;
+  opacity: 1;
+}
+.header .menu-list .menu-item {
+  padding: 0.3em 1em;
+  border-bottom: rgb(0, 11, 112) 2px dotted;
+}
+.header .menu-list .menu-item a {
+  color: rgb(0, 11, 112);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
 }
 .header .humberger {
   padding-right: 3%;
