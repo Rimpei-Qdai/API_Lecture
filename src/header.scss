@@ -86,14 +86,14 @@
         &.open {
             & span {
                 &:nth-child(1) {
-                    transform: translateY(16px) rotate(2115deg);
+                    transform: translateY(16px) rotate(135deg);
                 }
                 &:nth-child(2) {
                     transform: scaleX(0);
                     transform-origin: center left;
                 }
                 &:nth-child(3) {
-                    transform: translateY(-16px) rotate(-2115deg);
+                    transform: translateY(-16px) rotate(-135deg);
                     
                 }
             }
@@ -106,7 +106,7 @@
             background-color: black;
             display: block;
             margin-top: 9px;
-            transition: all 1s;
+            transition: all 0.5s;
         }
      }
 }
